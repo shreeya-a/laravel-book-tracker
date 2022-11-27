@@ -18,11 +18,12 @@
                     <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                     <div class="form-outline flex-fill mb-0">
                       <input type="text" name="name" id="form3Example1c" class="form-control @error('name') is-invalid @enderror"" />
-                      <label class=" form-label" for="form3Example1c">Your Name</label> @error('name')
+                      @error('name')
                       <div class="invalid-feedback">
                         {{$message}}
                       </div>
                       @enderror
+                      <label class=" form-label" for="form3Example1c">Your Name</label> 
                     </div>
                      
                   </div>
@@ -31,39 +32,42 @@
                     <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                     <div class="form-outline flex-fill mb-0">
                       <input type="email" name="email" id="form3Example3c" class="form-control @error('email') is-invalid @enderror" />
-                      <label class="form-label" for="form3Example3c">Your Email</label>
-                    </div>
-                    @error('email')
+                      @error('email')
                       <div class="invalid-feedback">
                         {{$message}}
                       </div>
                       @enderror
+                      <label class="form-label" for="form3Example3c">Your Email</label>
+                    </div>
+                    
                   </div>
 
               <div class="d-flex flex-row align-items-center mb-4">
                 <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
                 <div class="form-outline flex-fill mb-0">
                   <input type="password" name="password" id="form3Example4c" class="form-control @error('password') is-invalid @enderror" />
-                  <label class="form-label" for="form3Example4c">Password</label>
-                </div>
-                @error('password')
+                  @error('password')
                   <div class="invalid-feedback">
                     {{$message}}
                   </div>
                   @enderror
+                  <label class="form-label" for="form3Example4c">Password</label>
+                </div>
+              
             </div>
 
             <div class="d-flex flex-row align-items-center mb-4">
               <i class="fas fa-key fa-lg me-3 fa-fw"></i>
               <div class="form-outline flex-fill mb-0">
                 <input type="password" name="re-password" id="form3Example4cd" class="form-control @error('re-password') is-invalid @enderror" />
-                <label class="form-label" for="form3Example4cd">Repeat your password</label>
-              </div>
-              @error('re-password')
+                @error('re-password')
                 <div class="invalid-feedback">
                   {{$message}}
                 </div>
                 @enderror
+                <label class="form-label" for="form3Example4cd">Repeat your password</label>
+              </div>
+              
             </div>
 
 
