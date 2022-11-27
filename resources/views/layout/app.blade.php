@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Social media App</title>
+  <title>Reading List: Book Tracker</title>
 
   <!-- import gareko -->
   @vite(['resources/js/app.js'])
@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light text-black">
     <div class="container-fluid">
       <a class="navbar-brand" href="{{route('dashboard')}}">Book Tracker</a>
 
@@ -25,8 +25,8 @@
         </li>
 
         @auth
-        <a href="{{route('login')}}" class="p-2 nav-link">{{auth()->user()->name}}</a>
-        <a class="nav-link btn btn-danger text-white" href="{{route('logout')}}">Logout</a>
+        <a href="#" class="p-2 nav-link">{{auth()->user()->name}}</a>
+        <a class="nav-link btn btn-outline-info" href="{{route('logout')}}">Logout</a>
         @endauth
 
         @guest
