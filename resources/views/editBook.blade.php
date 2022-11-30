@@ -31,7 +31,7 @@
 
         <div class="mb-3">
             <label for="start" class="form-label">Start</label>
-            <input type="date" class="form-control" name="start" id="start" value="{{$list->start}}">
+            <input type="date" class="form-control" name="start" id="start"  value="{{$list->start}}">
         </div>
         <div class="mb-3">
             <label for="finish" class="form-label">Finish</label>

@@ -24,6 +24,7 @@ class BooklistController extends Controller
             'start' => $req->start,
             'finish' => $req->finish,
             'review' => $req->review,
+            'user_id'=> auth()->user()->id,
         ]);
         return redirect()->route('dashboard');
     }
