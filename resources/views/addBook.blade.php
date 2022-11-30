@@ -5,6 +5,8 @@
 
     <form action="{{route('saveBook')}}" method="post">
         @csrf
+    <fieldset>
+
         <div class="mb-3">
             <label for="title" class="form-label">Title</label>
             <input type="text" class="form-control" name="title" id="title" placeholder="Title of the book">
@@ -42,6 +44,7 @@
         </div>
 
         <button type="submit" class="btn btn-primary">Add</button>
+    </fieldset>
     </form>
 </div>
 
